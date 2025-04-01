@@ -10,7 +10,7 @@ Generacion proyecto Multi-Modulo
 - pom.xml de converts
 - Se añade en el pom.xml del root (mb2g-mm-maven) el plugin flatten-maven-plugin para aplanar los pom.xml
 - Se añade en el pom.xml del root (mb2g-mm-maven) el pluggn maven-enforcer-plugin para asegurar que la version
-  del java es 24 o superior, y la de maven es 3.8.6 o superior
+  del java es 19 o superior, y la de maven es 3.8.6 o superior
 
 ## Modulos generados
 1. jpa-entities
