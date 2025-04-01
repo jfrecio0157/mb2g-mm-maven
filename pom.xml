@@ -6,22 +6,28 @@
 
     <groupId>org.example</groupId>
     <artifactId>mb2g-mm-maven</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${revision}</version>
 
     <packaging>pom</packaging>
 
+
+    <!--> eliminado module from-imtellij -->
     <modules>
         <module>jpa-entities</module>
-        <module>from-intellij</module>
+
         <module>web-api</module>
         <module>web-app</module>
+        <module>converts</module>
     </modules>
 
     <properties>
+        <revision>1.0-SNAPSHOT</revision>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>24</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
+
+
 </project>
