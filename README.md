@@ -8,6 +8,7 @@ Generacion proyecto Multi-Modulo
 - pom.xml de web-api
 - pom.xml de web-app
 - pom.xml de converts
+- Se añade en el pom.xml del root (mb2g-mm-maven) el plugin flatten-maven-plugin para aplanar los pom.xml
 
 ## Modulos generados
 1. jpa-entities
