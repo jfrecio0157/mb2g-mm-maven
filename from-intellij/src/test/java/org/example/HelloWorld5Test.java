@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 //Test con Junit5
 public class HelloWorld5Test {
-    @Disabled
+    //@Disabled
     @Test
     void getHello5() {
         HelloFromJetBrains helloWorld = new HelloFromJetBrains();

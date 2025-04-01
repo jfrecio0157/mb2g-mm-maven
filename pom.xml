@@ -14,7 +14,7 @@
     <!--> eliminado module from-imtellij -->
     <modules>
         <module>jpa-entities</module>
-
+        <module>from-intellij</module>
         <module>web-api</module>
         <module>web-app</module>
         <module>converts</module>
@@ -77,7 +77,7 @@
                         <configuration>
                             <rules>
                                 <requireJavaVersion>
-                                    <version>[24,)</version>
+                                    <version>[19,)</version>
                                 </requireJavaVersion>
                                 <requireMavenVersion>
                                     <version>[3.8.6,)</version>
