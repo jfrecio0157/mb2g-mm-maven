@@ -29,12 +29,13 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
 
-    <!-->
-      Se usa el flatten-maven-plugin para aplanar los pom.xml de los diferentes modulos, y
-      de esta manera se dejan pom mas faciles de leer ya que se trae lo del padre
-      -->
+
     <build>
         <plugins>
+          <!-->
+          Se usa el flatten-maven-plugin para aplanar los pom.xml de los diferentes modulos, y
+          de esta manera se dejan pom mas faciles de leer ya que se trae lo del padre
+          -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
@@ -57,6 +58,32 @@
                         <goals>
                             <goal>clean</goal>
                         </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-->
+            Se usa el maven-enforcer-plugin para asegurar que la version del java es 24 o superior, y la de
+            maven 3.8.6 o superior
+            En caso de no serlo, salta un warning a la hora de hacer el install
+            -->
+            <plugin>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>enforce-env-requirements</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireJavaVersion>
+                                    <version>[24,)</version>
+                                </requireJavaVersion>
+                                <requireMavenVersion>
+                                    <version>[3.8.6,)</version>
+                                </requireMavenVersion>
+                            </rules>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
