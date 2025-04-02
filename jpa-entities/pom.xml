@@ -11,20 +11,20 @@
     </parent>
 
     <artifactId>jpa-entities</artifactId>
+
     <packaging>jar</packaging>
 
+    <!-- Las versiones de hibernate-core y lombok estan declaradas en el pom.xml padre (mb2g-mm-maven) -->
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
         <dependency>
             <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>6.6.12.Final</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.36</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

@@ -9,10 +9,6 @@
 
     <artifactId>converts</artifactId>
 
-    <properties>
-        <mapstruct.version>1.6.3</mapstruct.version>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.example</groupId>
@@ -24,12 +20,13 @@
             <artifactId>web-api</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <!-- La version de mapstruct esta declarada en el pom.xml padre (mb2g-mm-maven) -->
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
-            <version>${mapstruct.version}</version>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
